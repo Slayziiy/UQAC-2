@@ -7,4 +7,5 @@ import java.util.Optional;
 
 public interface FishRepository extends JpaRepository<Fish, Long> {
     Optional<Fish> findByUserId(Long userId);
+    boolean existsByUserId(Long userId);
 }
